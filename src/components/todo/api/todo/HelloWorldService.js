@@ -1,4 +1,5 @@
 import Axios from "axios";
+import AuthenticationService from "../../AuthenticationService";
 
 class HelloWorldService {
 
@@ -13,6 +14,8 @@ class HelloWorldService {
     executeHelloWorldPathVariableService = (name) =>{
         return Axios.get(`http://localhost:8080/hello-world-bean/${name}`);
     }
+
+
 }
 
 export default new HelloWorldService();
